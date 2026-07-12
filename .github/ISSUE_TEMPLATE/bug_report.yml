@@ -1,0 +1,40 @@
+name: Bug report
+description: Something is broken or behaving unexpectedly
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear description of the bug, including what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Minimal code that reproduces the issue — the exact input value, the options passed, the output format, and the result you got vs. expected.
+      render: typescript
+    validations:
+      required: true
+  - type: input
+    id: package-version
+    attributes:
+      label: any-date-format version
+      placeholder: 0.1.0
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Node version (or browser/bundler) and timezone
+      placeholder: Node 24, TZ=Asia/Kolkata
+    validations:
+      required: true
+  - type: checkboxes
+    id: security
+    attributes:
+      label: Security check
+      options:
+        - label: This is not a security vulnerability (those go through [SECURITY.md](../blob/main/SECURITY.md), never public issues)
+          required: true
