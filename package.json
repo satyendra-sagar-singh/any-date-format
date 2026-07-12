@@ -1,6 +1,6 @@
 {
   "name": "any-date-format",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Parse dates from (almost) any input format and format them exactly how you want.",
   "keywords": [
     "date",
